@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dragon Finance Website</title>
+  <link rel="icon" href="Dragon.jpg" type="image">
+  <style>
+    .header {
+        color: chocolate;
+        text-align: center;
+        position: relative;
+    }
+
+    .heading{
+        position: relative;
+        display: inline-block;
+    }
+
+    .heading::before, .heading::after{
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 80px;
+        height: 20px;
+        background-color: grey;
+        transform: translateY(-50%);
+    }
+
+    .heading::before{
+        left: -100px;
+    }
+
+    .heading::after{
+        right: -100px;
+    }
+
+    .navigation{
+        text-align: center;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        padding: 0 200px;
+    }
+
+    .navigation a{
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: orange;
+      color: black;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    .navigation a:hover {
+      background-color: orange;
+    }
+
+    .notice{
+        text-align: center;
+        background-color:crimson;
+        margin-top: 50px;
+        padding: 20px;
+    }
+
+    .welcome{
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    .language{
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+
+    .policies{
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        padding: 0 200px;
+    }
+
+    .policies a{
+      display: inline-block;
+      padding: 10px 20px;
+      background-color:cornflowerblue;
+      color: black;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    .policies a:hover {
+      background-color: cornflowerblue;
+    }
+
+    .assistance{
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      padding: 10px 20px;
+      background-color: lime;
+      color: black;
+      border-radius: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>
+        <p class="heading">Dragon Finance</p>
+    </h1>
+  </div>
+
+  <div class="navigation">
+      <a href="#">ABOUT US</a>
+      <a href="#">OUR SERVICES</a>
+      <a href="#">CONTACT US</a>
+      <a href="LoginPage.html">LOGIN</a>
+  </div>
+
+  <div>
+    <p class="notice">Call our Customer Service Hotline at 6123 4578 if you encounter or is a victim of scams. Stay vigilant to prevent scams.</p>
+  </div>
+
+<div>
+  <p class="welcome">In Dragon Finance we provide premium customer service to our customers. <br></br>
+    We as a Finance Company pledge to serve customer with the very best service and treasure the trust between customer and company. <br></br>We value customers' feedback and would do the utmost to protect customers' data and protect customers against fraud and scams.</p>
+</div>
+
+<div>
+  <p class="language">EN</p>
+</div>
+
+<div class="policies">
+  <a href="#">Data privacy policy</a>
+  <a href="#">KYC Policy</a>
+  <a href="#">CDD Policy</a>
+  <a href="#">AML Policy</a>
+</div>
+
+<div>
+  <p class="assistance">Need assistance?</p>
+</div>
+
+</body>
+</html>

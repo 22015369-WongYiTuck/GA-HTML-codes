@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dragon Finance Application Short Term Loan</title>
+  <style>
+
+    body{
+      background-image: url("wp3386784-full-hd-mountain-desktop-wallpaper.jpg");
+    }
+
+    .header{
+      color: black;
+      background-color: gold;
+      font-weight: bold;
+      text-align: center;
+      font-size: large;
+      padding: 20px;
+      margin-bottom: 50px;
+    }
+    
+    .leftSide{
+      font-size:larger;
+      float: left;
+      width: 30%;
+      margin-left: 30px;
+      background-color:rgba(240, 248, 255, 0.7);
+    }
+
+    .rightSide{
+      font-size: larger;
+      float: right;
+      width: 30%;
+      margin-right: 30px;
+      background-color:rgba(240, 248, 255, 0.7);
+    }
+
+    #proceed{
+      text-align: center;
+      position:absolute;
+      bottom: 10%;
+      left: 50%;
+    }
+
+    #proceed button{
+      color: black;
+      font-weight: bolder;
+      background-color: chartreuse;
+      font-size: x-large;
+    }
+
+    #contact{
+      text-align: center;
+      font-size: medium;
+      position: absolute;
+      bottom: 10%;
+      left: 5px;
+      color: black;
+      background-color: azure;
+    }
+
+  </style>
+</head>
+<body>
+  <div>
+    <p class="header">Application for short term loan</p>
+  </div>
+
+  <div class="leftSide">
+  <label for="lname">Legal Name: </label></br>
+  <input type="text" id="lname" name="name" size="50">
+
+  </br></br>
+
+  <label for="nricNo">NRIC No.: </label></br>
+  <input type="text" id="nricNo" name="nricNo" size="50">
+
+  </br></br>
+
+  <label for="bankAcc">Bank account No.: </label></br>
+  <input type="text" id="bankAcc" name="bankAcc" size="50">
+  
+  </br></br>
+
+  <label for="billAdr">Billing address / Residency address: </label></br>
+  <input type="text" id="billAdr" name="billAdr" size="50">
+    
+  </br></br>
+
+  <label for="timeDate">Available time and date for interview: </label></br>
+  <select id="timeDate" name="timeDate">
+    <option value="tues1">Tuesday 22 August 2023 3pm</option>
+    <option value="tues2">Tuesday 22 August 2023 4:30pm</option>
+    <option value="wedn1">Wednesday 30 August 2023 1pm</option>
+    <option value="wedn2">Wednesday 30 August 2023 2:30pm</option>
+    <option value="thur1">Thursday 7 September 2023 10am</option>
+    <option value="thur1">Thursday 7 September 2023 11:30am</option>
+  </select>
+  </div>
+
+  <div class="rightSide">
+    <label for="nricFile">Document 1: </label></br>
+    <input type="file" id="nricFile" name="nricFile">
+  
+    </br></br>
+  
+    <label for="bcFile">Document 2: </label></br>
+    <input type="file" id="bcFile" name="bcFile">
+  
+    </br></br>
+  
+    <label for="cpfFile">Document 3: </label></br>
+    <input type="file" id="cpfFile" name="cpfFile">
+    
+    </br></br>
+  
+    <label for="bankFile">Document 4: </label></br>
+    <input type="file" id="bankFile" name="bankFile">
+      
+    </br></br>
+  
+    <label for="loanFile">Document 5: </label></br>
+    <input type="file" id="loanFile" name="loanFile">
+  </div>
+
+  <div id="contact">
+    <p>The company will send you an email within 3 to 5 working days after clicking process.
+    </br>
+    If you need more information, you can contact us at <a href="ContactUsPage.html">here</a>
+    </p>
+  </div>
+
+  <div id="proceed">
+    <a href="Homepage.html"><button>Proceed</button></a>
+  </div>
+
+</body>
+</html>
