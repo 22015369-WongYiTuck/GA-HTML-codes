@@ -1,0 +1,14 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open Application Short term loan.html",
+            "file": "c:\\Users\\ytwon\\OneDrive\\Desktop\\RP Modules\\2023 Year 2 Sem 1\\C369 Financial Technologies\\GA\\GA HTML codes\\Application Short term loan.html"
+        }
+    ]
+}
