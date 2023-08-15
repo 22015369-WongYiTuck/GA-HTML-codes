@@ -26,28 +26,16 @@
     .userBox{
         margin-top: 50px;
         text-align: center;
-        width: 400px;
-        height: 25px;
-        border:1px solid black;
-        padding: 10px;
     }
 
     .contactBox{
         margin-top: 40px;
         text-align: center;
-        width: 400px;
-        height: 25px;
-        border:1px solid black;
-        padding: 10px;
     }
 
     .pwBox{
         margin-top: 40px;
         text-align: center;
-        width: 400px;
-        height: 45px;
-        border:1px solid black;
-        padding: 10px;
     }
 
     .register{
@@ -72,18 +60,61 @@
     <p class="header">Registration page</p>
   </div>
 
-    <div>
-      <p class="userBox" contenteditable>Enter email address</p>
-      <p class="contactBox" contenteditable>Enter contact number</p>
-      <p class="pwBox" contenteditable>Enter a password</br>(Must contain numbers, alphabets and symbols)</p>
+  <div class="userBox">
+    <label for="email">Email address: </label></br>
+    <input type="text" id="email" name="email" size="70" placeholder="Enter email address">
+  </div>
+
+  <div class="contactBox">
+    <label for="num">Contact number: </label></br>
+    <input type="text" id="num" name="num" size="70" placeholder="Enter contact number">
+  </div>
+
+  <div class="pwBox">
+    <label for="pwd">Password: </label></br>
+    <input type="text" id="pwd" name="pwd" size="70" placeholder="Enter a password (Must contain numbers, alphabets and symbols)">
   </div>
 
   <div class="register">
-      <a href="LoginPage.html"><button>Register now</button></a>
+      <button onclick="mainFunction()">Register now</button></a>
   </div>
 
   <div class="other">
       <p>Don't have an account? Sign up <a href="LoginPage.html">here</a> now</p>
   </div>
+
+  <script>
+    function mainFunction(){
+      let canPass = true;
+
+      var mail = document.getElementById("email").value;
+
+      var number = document.getElementById("num").value;
+
+      var password = document.getElementById("pwd").value;
+
+      if(mail.indexOf("@") === -1){
+        alert("Invalid Email Address!!");
+        return canPass = false;
+      }
+
+      if(!/^\d+$/.test(number)){
+        alert("Invalid Contact Number!!");
+        return canPass = false;
+      }
+
+      if(!/(?=.*\d)(?=.*[a-zA-Z])(?=.*[!@#$%^&*])/.test(password)){
+        alert("Invalid Password!! Must contain numbers, alphabets and symbols");
+        return canPass = false;
+      }
+
+      if(canPass = true){
+         alert("Registration successful!");
+         window.location.href="LoginPage.html";
+      }
+
+    }
+  </script>
+
 </body>
 </html>

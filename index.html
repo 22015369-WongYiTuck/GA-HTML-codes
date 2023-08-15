@@ -84,7 +84,7 @@
         padding: 0 200px;
     }
 
-    .policies a{
+    .policies button{
       display: inline-block;
       padding: 10px 20px;
       background-color:cornflowerblue;
@@ -93,8 +93,13 @@
       border-radius: 4px;
     }
 
-    .policies a:hover {
-      background-color: cornflowerblue;
+    .appear{
+      display: none;
+      color:darkviolet;
+    }
+
+    .aml:hover + .appear {
+      display: block;
     }
 
     .assistance{
@@ -136,10 +141,18 @@
 </div>
 
 <div class="policies">
-  <a href="#">Data privacy policy</a>
-  <a href="#">KYC Policy</a>
-  <a href="#">CDD Policy</a>
-  <a href="#">AML Policy</a>
+  <button>Data privacy policy</button>
+  <button>KYC Policy</button>
+  <button>CDD Policy</button>
+
+  <div class="aml">
+    <button>AML Policy</button>
+  </div>
+
+  <div class="appear">
+      In Dragon Finance, we report or file a report when there are suspicious activities or any cases of fraud detected. The company will uphold integrity and ensure that none of its customers and staff are invokve in any activities that would finance terrorism activities and money laundering activities.
+  </div>
+
 </div>
 
 <div>

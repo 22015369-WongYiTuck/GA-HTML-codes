@@ -28,7 +28,7 @@
     }
 
     .rightSide{
-      font-size: larger;
+      font-size: large;
       float: right;
       width: 30%;
       margin-right: 30px;
@@ -58,15 +58,6 @@
       color: black;
       background-color: azure;
     }
-    /* #contact{
-      text-align: center;
-      font-size: medium;
-      position: absolute;
-      bottom: 10%;
-      left: 5px;
-      color: black;
-      background-color: azure;
-    } */
 
   </style>
 </head>
@@ -77,22 +68,22 @@
 
   <div class="leftSide">
   <label for="lname">Legal Name: </label></br>
-  <input type="text" id="lname" name="name" size="50">
+  <input type="text" id="lname" name="name" size="50" placeholder="Enter name as reflected in NRIC"> 
 
   </br></br>
 
   <label for="nricNo">NRIC No.: </label></br>
-  <input type="text" id="nricNo" name="nricNo" size="50">
+  <input type="text" id="nricNo" name="nricNo" size="50" placeholder="Enter NRIC No. as reflected in NRIC">
 
   </br></br>
 
   <label for="bankAcc">Bank account No.: </label></br>
-  <input type="text" id="bankAcc" name="bankAcc" size="50">
+  <input type="text" id="bankAcc" name="bankAcc" size="50" placeholder="Enter Bank account No.">
   
   </br></br>
 
   <label for="billAdr">Billing address / Residency address: </label></br>
-  <input type="text" id="billAdr" name="billAdr" size="50">
+  <input type="text" id="billAdr" name="billAdr" size="50" placeholder="Enter your residency address">
     
   </br></br>
 
@@ -108,27 +99,37 @@
   </div>
 
   <div class="rightSide">
-    <label for="nricFile">Document 1: </label></br>
+    <label for="nricFile">Document 1: </br>
+      Upload NRIC </br>
+    </label>
     <input type="file" id="nricFile" name="nricFile">
   
     </br></br>
   
-    <label for="bcFile">Document 2: </label></br>
+    <label for="bcFile">Document 2: </br>
+      Upload birth certificate </br>
+    </label>
     <input type="file" id="bcFile" name="bcFile">
   
     </br></br>
   
-    <label for="cpfFile">Document 3: </label></br>
+    <label for="cpfFile">Document 3: </br>
+      Upload CPF statements </br>
+    </label>
     <input type="file" id="cpfFile" name="cpfFile">
     
     </br></br>
   
-    <label for="bankFile">Document 4: </label></br>
+    <label for="bankFile">Document 4: </br>
+      Upload bank statements </br>
+      </label>
     <input type="file" id="bankFile" name="bankFile">
       
     </br></br>
   
-    <label for="loanFile">Document 5: </label></br>
+    <label for="loanFile">Document 5: </br>
+      Upload past loan records (if any) </br>
+    </label>
     <input type="file" id="loanFile" name="loanFile">
   </div>
 
